@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support us 💲</title>
+    <link rel="stylesheet" href="bank.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body>
+    <nav>
+      <img class="logo" src="logo.png" alt="not available" />
+      <a href="modern.html" class="links">home</a>
+      <a href="#" class="links">Products</a>
+      <a class="support" href="bank.html" class="links">Support Us</a>
+      <p class="dark">Dark mode</p>
+    </nav>
+    <title>Bank</title>
+    <form action="">
+      <h1 align="center">Payment form</h1>
+      <fieldset>
+        <legend>User details</legend>
+
+        <p>
+          First name:
+          <input
+            type="text required"
+            class="form__input"
+            name="FirstName"
+            placeholder="First name"
+            required
+          />
+        </p>
+        <p>
+          Middle name:
+          <input
+            type="text required"
+            name="Middle name"
+            class="form__input"
+            placeholder="Middle name"
+            required
+          />
+        </p>
+        <p>
+          Last name:
+          <input
+            type="text required"
+            name="Last name"
+            placeholder="Last name"
+            class="form__input"
+            required
+          />
+        </p>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Gender</legend>
+        <p>Male <input type="radio" name="gender" id="male" required /></p>
+        <p>Female <input type="radio" name="gender" required /></p>
+        <p>Other <input type="radio" name="gender" required /></p>
+      </fieldset>
+      <fieldset>
+        <legend>Address</legend>
+        <p>
+          <textarea
+            name="Address"
+            id="Add"
+            rows="7"
+            cols="100"
+            class="form__input"
+            required
+            placeholder="Enter address"
+          ></textarea>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Email</legend>
+        <p>
+          <input
+            class="email"
+            type="email"
+            name="email"
+            id="email"
+            class="form__input"
+            placeholder="abc@xyz.com"
+            required
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Pincode</legend>
+        <p>
+          <input
+            type="text"
+            id="pincode"
+            class="form__input"
+            required
+            placeholder="313002"
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Card details</legend>
+        <p>
+          Card type
+          <select name="card_type" id="card_type" required>
+            <option value="">---Select a card type ----</option>
+            <option value="visa">Visa card</option>
+            <option value="master">Master card</option>
+          </select>
+        </p>
+        <p>
+          Card number:
+          <input
+            type="text"
+            id="number"
+            required
+            placeholder="1111-2222-3333-4444"
+            max="16"
+          />
+        </p>
+        <p>Date <input type="date" id="date" required /></p>
+        <p>
+          CVV:
+          <input type="Password" name="cvv" id="cvv" required min="4" max="4" />
+        </p>
+      </fieldset>
+      <input class="submission" type="submit" value="Paynow" />
+    </form>
+    <script src="dark.js"></script>
+  </body>
+</html>

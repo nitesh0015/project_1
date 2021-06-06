@@ -1,0 +1,104 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  height: fit-content;
+}
+
+nav {
+  height: 50px;
+}
+.home {
+  color: lightseagreen;
+}
+.logo {
+  background-color: grey;
+  float: right;
+  border-radius: 8px;
+}
+nav a,
+.dark {
+  color: grey;
+  text-decoration: solid;
+  letter-spacing: 4px;
+  font-weight: 500;
+  word-spacing: 15px;
+  text-transform: uppercase;
+  margin: 0px;
+  text-decoration: none;
+  padding: 14px 20px;
+  float: left;
+  transition: all ease-in-out 1000ms;
+}
+.images {
+  float: right;
+  position: relative;
+  bottom: 300px;
+  left: 50px;
+  right: 15px;
+}
+
+button {
+  color: grey;
+  background-color: black;
+  font-weight: 500;
+  border-style: hidden;
+  letter-spacing: 2px;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+}
+p {
+  width: 500px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+nav a::after {
+  content: '';
+  display: block;
+  background-color: lightseagreen;
+  height: 0.4em;
+  width: 0%;
+  bottom: -1em;
+  transition: all ease-in-out 300ms;
+}
+a:last-child {
+  margin-right: 3em;
+  margin-left: auto;
+}
+nav a:hover::after {
+  width: 100%;
+  /* text-decoration: underline;
+    color:lightseagreen*/
+}
+nav a:hover {
+  transition: all ease-in-out 300ms;
+  color: lightseagreen;
+}
+
+h1 {
+  font-size: 40px;
+  padding: 14px 20px;
+  margin: 200px 0px 0px 0px;
+  color: rgb(26, 104, 168);
+}
+nav p:hover::after {
+  width: 25%;
+  /* text-decoration: underline;
+      color:lightseagreen*/
+}
+nav p:hover {
+  transition: all ease-in-out 300ms;
+  color: lightseagreen;
+}
+nav p::after {
+  content: '';
+  display: block;
+  background-color: lightseagreen;
+  height: 0.4em;
+  width: 0%;
+  bottom: -1em;
+  transition: all ease-in-out 300ms;
+}
